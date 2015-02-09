@@ -8,7 +8,8 @@ To cover for the lack of an export function in PasswordBox, here is a "hack" you
 4. Select the "Extensions" tab
 5. Scroll down to the "PasswordBox" extension entry and click the "background page" link next to "inspect views:"
 6. In the "Developer Tools" window that opens, paste the entire contents of "export.js" into it + press enter
-7. Run one of the export functions:
+7. Run one of the export functions to get the database as CSV to your clipboard
+8. Use the data anyway you want!
 
 ### MK.exportCsvToClipboard([options])
 
