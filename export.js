@@ -47,6 +47,7 @@ window.MK = {};
 
       records.push(item.attributes);
     });
+    console.log('Extracted ' + records.length + ' records from your database.');
     return records;
   }
 
@@ -120,11 +121,13 @@ window.MK = {};
   }
 
   function exportCsvToClipboard(config) {
-    PB.Utility.setPasswordText(exportCsv(config));
+    PB.Utility.setClipboardText(exportCsv(config));
+    console.log('Exported result to clipboard.');
   }
 
   function exportFor1PasswordToClipboard() {
-    PB.Utility.setPasswordText(exportCsv(config));
+    PB.Utility.setClipboardText(exportCsv());
+    console.log('Exported result to clipboard.');
   }
 
   // Export public API.
