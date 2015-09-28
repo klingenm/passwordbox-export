@@ -35,7 +35,7 @@ window.MK = {};
       if (item.attributes.memo_k) {
         var clearText = FA.Background.decryptWithAES(item.attributes.memo_k);
         if (FA.isJson(clearText)) {
-          item.attributes.memo = JSON.decode(clearText);
+          item.attributes.memo = JSON.parse(clearText);
         } else {
           item.attributes.memo = clearText;
         }
