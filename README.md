@@ -1,4 +1,7 @@
-# Export for PasswordBox Chrome plugin
+
+#DEPRECATED DON'T USE!
+
+## Export for PasswordBox Chrome plugin
 To cover for the lack of an export function in PasswordBox, here is a "hack" you're welcome to use if you want to export your passwords to another password manager.
 
 ## Usage
