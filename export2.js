@@ -9,7 +9,7 @@ start = setInterval(function(){
   len = items.length;
   clearInterval(start);
   processItem(0);
-},1);
+},10);
 
 function processItem(i){
   items[i].click();									// click edit button
@@ -24,8 +24,8 @@ function processItem(i){
       clearInterval(inter2);
       if(i<len-1) processItem(++i);					// process next item or export file if done
       else exportToCsv("result.csv",result);
-    },1);
-  },1); 
+    },10);
+  },10); 
 }
 
 addSpaces = function(num,str){return str + new Array( Math.max(num - str.length,1) ).join(' ')} // for formatting logging
