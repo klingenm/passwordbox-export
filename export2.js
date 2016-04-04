@@ -17,7 +17,9 @@ function processItem(i){
     if(typeof(username_fill)==undefined) return;	// wait until item loads
     clearInterval(inter);
     console.log( i + "\t"+addSpaces(30,title_fill.value) + addSpaces(30,username_fill.value) + password_fill.value);			// print item to see progress
-    result.push( [  url_fill.value, title_fill.value, username_fill.value, "" , password_fill.value,"" , memo_fill.value ]);	// add values to results array to be converted into csv file. Empty values should be empty strings, don't use null or leave blank
+   if(typeof memo_fill != 'undefined') {
+      result.push( [  url_fill.value, title_fill.value, username_fill.value, "" , password_fill.value,"" , memo_fill.value ]);	// add values to results array to be converted into csv file. Empty values should be empty strings, don't use null or leave blank
+    }
     bt_passwordbox.click();							// return to main view
     inter2 = setInterval(function(){
       if(items.length == 0) return;					// wait until main view loads
